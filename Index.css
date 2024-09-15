@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(https://img.freepik.com/fotos-premium/fotografia-espectacular-persona-pie-roca-mirando-parque-natural-tres-picos-toblach-italia_1041263-1963.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    background-color: #f0f0f0;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media(max-width: 800px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+.container{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    flex-grow: 1;
+    padding: 10px 40px;
+}
+.div1, .div2, .div3{
+    width: 18em;
+    height: 28em;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), #81D4FA);
+    box-shadow: 5px 5px 25px #000;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+img{
+    border-radius: 7px;
+}
+
+
+.btn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), #81D4FA);
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.btn:hover{
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+h2,h4{
+    color: #000;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+@media(max-width:1200px){
+    .container{
+        height: 100%;
+        flex-direction: column;
+    }
+    .div1, .div2, .div3{
+        max-width: 80%;
+        padding: 38px;
+    }
+}
+
+

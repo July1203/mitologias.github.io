@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitologia Egipcia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Css/Carrusel.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></a></li>
+            <li><a href="Index.html">Mitologias</a></li>
+            <li><a href="#">Egipcia</a></li>
+            <li><a href="#">Griega</a></li>
+            <li><a href="#">Nordica</a></li>
+        </ul>
+        <ul>
+            <li><a href="Index.html">Mitologias</a></li>
+            <li class="hideOnMobile"><a href="CarruselE.html">Egipcia</a></li>
+            <li class="hideOnMobile"><a href="../MGriega/CarruselG.html">Griega</a></li>
+            <li class="hideOnMobile"><a href="../MNordica/CarruselN.html">Nordica</a></li>
+            <li  class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <div class="slider">
+            <div class="card" style="--i:2;">
+                <img src="https://hablaconlahistoria.es/wp-content/uploads/2024/05/Hathor.webp">
+                <div class="info">
+                    <H1>Hathor</H1>
+                    <p>Hathor diosa del amor y la fertilidad, madre simbolica de los faraones y
+                        esposa de Horus.
+                    </p>
+                    <a href="Hathor (1).html" class="btn">Mas acerca de Hathor</a>
+                </div>
+            </div>
+            <div class="card" style="--i:1;">
+                <img src="https://static.wixstatic.com/media/af1176_8aead479214c494db501df7140fb43ee~mv2.jpg/v1/fill/w_980,h_1470,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/af1176_8aead479214c494db501df7140fb43ee~mv2.jpg">
+                <div class="info" >
+                    <H1>Horus</H1>
+                    <p>Horus Dios del cielo, hijo de la diosa Isis y el Dios Osiris.
+                    </p>
+                    <a href="Horus.html" class="btn">Mas acerca de Horus</a>
+                </div>
+            </div>
+
+            <div class="card" style="--i:3;">
+                <img src="https://static.wikia.nocookie.net/ocversetheond/images/0/0a/Anubis.jpg/revision/latest?cb=20230719001305">
+                <div class="info" >
+                    <H1>Anubis</H1>
+                    <p>Anubis Dios de la muerte y la momificacion, encargado de llevar los muertos al otro lado.</p>
+                    <a href="Anubis.html" class="btn">Mas acerca de Anubis</a>
+                </div>
+            </div>
+
+            <div class="card" style="--i:6;">
+                <img src="https://i.pinimg.com/236x/32/05/94/32059406e63819b9281cdb325b07b2e0.jpg">
+                <div class="info" >
+                    <H1>Seth</H1>
+                    <p>Seth es un dios egipcio conocido por ser el dios del caos, la violencia y el desorden</p>
+                    <a href="Seth.html" class="btn">Mas acerca de Seth</a>
+                </div>
+            </div>
+
+            <div class="card" style="--i:8;">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/04f87ff7-4572-4d21-a02c-9d8d441976e8/dgw7n05-ffae4bfa-f8db-4b3c-bd23-e0bfc1c92f9c.jpg/v1/fill/w_894,h_894,q_70,strp/osiris__egyptian_god_of_judgment__the_afterlife_an_by_gallerybrisart_dgw7n05-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA0Zjg3ZmY3LTQ1NzItNGQyMS1hMDJjLTlkOGQ0NDE5NzZlOFwvZGd3N24wNS1mZmFlNGJmYS1mOGRiLTRiM2MtYmQyMy1lMGJmYzFjOTJmOWMuanBnIiwiaGVpZ2h0IjoiPD05MDAiLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ilwvd21cLzA0Zjg3ZmY3LTQ1NzItNGQyMS1hMDJjLTlkOGQ0NDE5NzZlOFwvZ2FsbGVyeWJyaXNhcnQtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.OoF7wyhyw9584lyNaoZKWNGPFuWDH49QHzJS7nNxtg8">
+                <div class="info" >
+                    <H1>Osiris</H1>
+                    <p>Osiris rey del mas alla; Dios de la resureccion y la agricultura. </p>
+                    <a href="Osiris.html" class="btn">Mas acerca de Osiris</a>
+                </div>
+            </div>
+
+            <div class="card" style="--i:4;">
+                <img src="https://images.playground.com/4e5bc1647dfd459f9a2cfe3ac7a60f30.jpeg">
+                <div class="info" >
+                    <H1>Ra</H1>
+                    <p>Ra dios solar que creo el sol, la lluvia, la tierra y el firmamiento, se convirtio
+                        en Dios de los faraones.
+                    </p>
+                    <a href="Ra.html" class="btn">Mas acerca de Ra</a>
+                </div>
+            </div>
+
+            <div class="card" style="--i:7;">
+                <img src="https://www.vermontcountrydigital.com/cdn/shop/products/isis-ai-digital-image-of-egyptian-goddess-digital-image-of-isis-for-download-509434_1200x1200.png?v=1710120500">
+                <div class="info">
+                    <H1>Isis</H1>
+                    <p>Diosa de la magia y la sabiduria; reina de las diosas y protectora de madres y niños,
+                        mujer de osiris.
+                    </p>
+                    <a href="Isis.html" class="btn">Mas acerca de Isis</a>
+                </div>
+            </div>
+
+            <div class="card" style="--i:5;">
+                <img src="https://i0.wp.com/iseumsanctuary.com/wp-content/uploads/2023/03/autonomous_full_body_portrait_photorealistic_god_thoth_wearing__feb00d9a-77c0-40e8-8aad-42d256eead55.png?resize=863%2C863&ssl=1">
+                <div class="info">
+                    <H1>Thoth</H1>
+                    <p>Thoth Dios de la sabiduria, creo escritura, ciencias, musica y conjuros</p>
+                    <a href="Thoth.html" class="btn">Mas acerca de Thot</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/Contenido.js"></script>
+</body>
+</html>  
